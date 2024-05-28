@@ -7,7 +7,7 @@ const Sidebar = () => {
                 <span>
                     Orders
                 </span>
-                <span class="ml-2">&#62;</span>
+                <span className="ml-2">&#62;</span>
             </button>
         </div>
     )

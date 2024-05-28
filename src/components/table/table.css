@@ -1,0 +1,9 @@
+.custom-table {
+    width: 100%;
+    font-size: 18px;
+}
+
+.custom-table th,
+.custom-table td {
+    padding: 16px;
+}
