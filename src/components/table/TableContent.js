@@ -119,7 +119,7 @@ const TableContent = () => {
                             <tdv className="font-semibold">{row.customerName}</tdv>
                             <td className={`${index % 3 === 0 ? "text-blue-600" : (index % 3 === 1) ? "text-red-500" : "text-yellow-400"}`}>{row.orderType}</td>
                             <td >
-                                <span className={` rounded-lg pl-2 pt-1 pb-1 pr-2 ${index % 3 === 0 ? "bg-purple-300 text-purple-600" : "bg-orange-300 text-orange-600"}`}>
+                                <span className={` rounded-lg pl-2 pt-1 pb-1 pr-2 ${index % 3 === 0 ? "bg-purple-100 text-purple-600" : "bg-orange-100 text-orange-600"}`}>
                                     {row.orderStatus}
                                 </span>
                             </td>
