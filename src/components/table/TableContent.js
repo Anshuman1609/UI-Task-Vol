@@ -1,6 +1,6 @@
 import React from 'react';
-import "./table.css"
-import { FaExternalLinkAlt } from 'react-icons/fa';
+import "./table.css";
+import LaunchIcon from '@mui/icons-material/Launch';
 import { IoMdArrowDropdown } from 'react-icons/io';
 
 const TableContent = () => {
@@ -91,7 +91,7 @@ const TableContent = () => {
 
     return (
         <div className="overflow-x-auto">
-            <table className="custom-table table border-2 border-spacing-6 border-gray-500 w-full bg-white">
+            <table className=" text-base custom-table table border-2 border-spacing-6 border-gray-500 w-full bg-white">
                 <thead className="thead-dark">
                     <tr className=' text-justify border-b-2 border-gray-300'>
                         <th>Order ID</th>
@@ -119,7 +119,7 @@ const TableContent = () => {
                             <tdv className="font-semibold">{row.customerName}</tdv>
                             <td className={`${index % 3 === 0 ? "text-blue-600" : (index % 3 === 1) ? "text-red-500" : "text-yellow-400"}`}>{row.orderType}</td>
                             <td >
-                                <span className={` rounded-lg pl-2 pt-1 pb-1 pr-2 ${index % 3 === 0 ? "bg-purple-100 text-purple-600" : "bg-orange-100 text-orange-600"}`}>
+                                <span className={`text-base rounded-lg pl-2 pt-1 pb-1 pr-2 ${index % 3 === 0 ? "bg-purple-100 text-purple-600" : "bg-orange-100 text-orange-600"}`}>
                                     {row.orderStatus}
                                 </span>
                             </td>
@@ -129,11 +129,7 @@ const TableContent = () => {
                                 </span>
                             </td>
                             <td>{row.orderDate}</td>
-                            <td>
-                                <a href={`https://example.com/order/${row.orderId}`} target="_blank" rel="noopener noreferrer">
-                                    <FaExternalLinkAlt />
-                                </a>
-                            </td>
+                            <td className="border-b-2 p-4"><a href="/" className="text-blue-500"><LaunchIcon /></a></td>
                         </tr>
                     ))}
                 </tbody>
