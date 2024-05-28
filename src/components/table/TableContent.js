@@ -25,7 +25,7 @@ const TableContent = () => {
         },
         {
             orderId: "TOM1234569",
-            tableNo: "a",
+            tableNo: "3",
             customerName: "Anatol Lambertazzi",
             orderType: "Take Away",
             orderStatus: "New Order",
